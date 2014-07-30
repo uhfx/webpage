@@ -1,0 +1,40 @@
+<!Doctype HTML>
+<head>
+<title>セルシウス ファーレンハイト</title>
+<script type="text/javascript">
+<!--
+function celsius()
+{
+temperature = document.myFORM.FAHRENHEIT.value;
+temperature = (temperature - 32) / 1.8;
+document.myFORM.CELSIUS.value = encodeURIComponent(temperature);
+}
+
+function fahrenheit()
+{
+temperature = document.myFORM.CELSIUS.value;
+temperature = temperature * 1.8 + 32;
+document.myFORM.FAHRENHEIT.value = decodeURIComponent(temperature);
+}
+
+// -->
+</script>
+</head>
+<body>
+<form name="myFORM">
+<b><font color="#0000ff">■</font></b><br>
+<br>
+<table><tr><td bgcolor="#ccccff" width="200" align="center">
+<b>摂氏(&#8451;)</b>: <input type="text" name="CELSIUS" onclick="this.focus(); this.select();">　<br>
+</td>
+<td align="center" valign="middle">
+<input type="button" value="→ 華氏に変換 →" onClick="fahrenheit()"><br>
+<br><br>
+<input type="button" value="← 摂氏に変換 ←" onClick="celsius()"><br>
+</td>
+<td bgcolor="#ccccff" width="200" align="center">
+<b>華氏(&#8457;)</b></b>: <input type="text" name="FAHRENHEIT" onclick="this.focus(); this.select();">　<br>
+</td></tr></table>
+</form>
+</body>
+</html>

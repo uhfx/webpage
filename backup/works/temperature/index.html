@@ -1,0 +1,37 @@
+<!Doctype HTML>
+<head>
+<title>セルシウス ファーレンハイト</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/style.css" />
+<script type="text/javascript" src="calculation.js"></script>
+<link rel="shortcut icon" href="http://github.com/favicon.ico">
+</head>
+<body>
+<header>
+<div class="container">
+<form name="myFORM">
+<h1>摂氏から華氏、華氏から摂氏</h1><br>
+<br>
+<table><tr><td width="200" align="center">
+<b>摂氏(&#8451;)</b> <input type="text" name="CELSIUS" onclick="this.focus(); this.select();">　<br>
+</td>
+<td align="center" valign="middle">
+<input type="button" class="btn btn-default btn-primary btn-sm" value="→→→華氏&#8457;→→→" onClick="fahrenheit()"><br>
+<br><br>
+<input type="button" class="btn btn-default btn-danger btn-sm" value="←←←摂氏&#8451;←←←" onClick="celsius()"><br>
+</td>
+<td width="200" align="center">
+<b>華氏(&#8457;)</b> <input type="text" name="FAHRENHEIT" onclick="this.focus(); this.select();">　<br>
+</td></tr></table>
+</form>
+<a href="javascript:history.back()" class="btn btn-default btn-primary btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> もどる</a><br><br>
+<a href="/">とっぷ</a>
+<!-- Horizontal Rule -->
+<hr>
+<p>Powered by <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> 3.2.0 &amp; <a href="http://www.plugolabs.com/twitter-bootstrap-button-generator-3/" target="_blank">Twitter Bootstrap Button Generator for Bootstrap 3</a></p>
+<div id="right">Since 2014.7.31</div>
+</div>
+</div>
+</header>
+</body>
+</html>
